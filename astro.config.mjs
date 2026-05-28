@@ -7,6 +7,7 @@ import markdoc from '@astrojs/markdoc';
 
 export default defineConfig({
     site: 'https://drluisenrique.com',
+    base: '/',
     
     // Las integraciones van aquí, cerradas correctamente con un corchete
     integrations: [
