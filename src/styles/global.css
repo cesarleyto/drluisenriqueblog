@@ -1,0 +1,116 @@
+/* src/styles/global.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+:root {
+  /* Paleta Verde Turquesa y Blanco */
+  --primary: #14b8a6;       /* Verde turquesa principal (Limpio y médico) */
+  --secondary: #0f766e;     /* Turquesa más oscuro (Para contrastes y sombras) */
+  --accent: #e11d48;        /* Color de acento opcional (Para alertas urgentes) */
+  
+  --text-dark: #1f2937;     /* Gris oscuro para textos (Más legible que negro puro) */
+  --text-muted: #6b7280;    /* Gris medio para descripciones y subtítulos */
+  
+  --bg-light: #f0fdfa;      /* Blanco con un micro-toque turquesa para separar secciones suavemente */
+  --bg-white: #ffffff;      /* Blanco puro (Base principal) */
+  
+  /* Degradados Frescos para Botones */
+  --gradient-btn: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  --gradient-btn-hover: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+  
+  /* Estructura y Sombras */
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================
+   Reset y Base
+========================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  scroll-behavior: smooth; 
+  background-color: var(--bg-white); /* Base blanca */
+  color: var(--text-dark);
+}
+
+body {
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  color: var(--primary);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--secondary);
+}
+
+/* =========================================
+   Clases Utilitarias (Botones y Contenedores)
+========================================= */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Botón con Degradado Turquesa */
+.btn-primary {
+  display: inline-block;
+  background: var(--gradient-btn);
+  color: var(--bg-white) !important;
+  padding: 12px 28px;
+  border-radius: 50px; 
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: var(--gradient-btn-hover);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px); 
+}
+
+/* Secciones genéricas */
+.section {
+  padding: 80px 0;
+}
+
+.section-light {
+  background-color: var(--bg-light); /* Aplica el fondo sutil */
+}
+
+.section-white {
+  background-color: var(--bg-white); /* Aplica el blanco puro */
+}
+
+.text-center {
+  text-align: center;
+}

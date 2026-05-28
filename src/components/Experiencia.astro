@@ -1,0 +1,138 @@
+---
+---
+<section id="experiencia" class="section section-gradient">
+  <div class="container">
+    
+    <div class="text-center section-header">
+      <h2>Formación y Experiencia</h2>
+    </div>
+
+    <div class="experiencia-grid">
+      
+      <!-- Tarjeta 1: Formación -->
+      <div class="experiencia-card">
+        <h3>🎓 Formación Académica</h3>
+        <ul>
+          <li><strong>Especialista en Ortopedia y Traumatología</strong> egresado de la Universidad Nacional Autónoma de México (UNAM).</li>
+          <li><strong>Alta Especialidad</strong> en Cirugía Articular de Cadera, y Cirugía de Pelvis y Acetábulo (UNAM).</li>
+          <li><strong>Training surgery en Anterior Approach Hip</strong> por Medacta Orthopaedic Research and Education (Chicago, IL), enfocado en técnicas mínimamente invasivas.</li>
+        </ul>
+      </div>
+
+      <!-- Tarjeta 2: Sociedades -->
+      <div class="experiencia-card">
+        <h3>🏥 Certificaciones y Sociedades</h3>
+        <ul>
+          <li>Certificación por el <strong>Consejo Mexicano de Ortopedia</strong>.</li>
+          <li>Miembro de la <strong>American Association of Hip and Knee Surgeons (AAHKS)</strong> y AO Trauma Latinoamerica.</li>
+          <li>Miembro Titular del Colegio Mexicano de Ortopedia y Traumatología, y la Sociedad Mexicana de Cirugía de Cadera A.C.</li>
+          <li>Miembro de la Sociedad Internacional de Pelvis y Acetábulo.</li>
+        </ul>
+      </div>
+
+      <!-- Tarjeta 3: Profesional -->
+      <div class="experiencia-card">
+        <h3>💼 Práctica Profesional</h3>
+        <ul>
+          <li><strong>Refer Center de Medacta International en México:</strong> Parte de la red global de centros de referencia en artroplastia.</li>
+          <li>Práctica privada, urgencias y atención a seguros médicos en <strong>Hospital HMG Coyoacán San Ángel Inn</strong>.</li>
+          <li>Participación en programas internacionales de educación, innovación y estandarización quirúrgica.</li>
+        </ul>
+      </div>
+
+      <!-- Tarjeta 4: Academia y Premios -->
+      <div class="experiencia-card">
+        <h3>🏆 Academia y Reconocimientos</h3>
+        <ul>
+          <li><strong>Profesor Internacional</strong> del Simposium en Cirugía Biológica y congresos de ortopedia avanzada.</li>
+          <li>Socio fundador del Directorio Médico Nacional y autor de <strong>publicaciones médicas premiadas</strong>.</li>
+          <li>Reconocimiento por la contribución en la lucha por la salud contra la COVID-19 por la <strong>UNAM</strong>.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  /* El Fondo Degradado Radial Turquesa Pastel (Más Intenso y Visible) */
+  .section-gradient {
+    /* Subimos la opacidad a un 18% en el centro y acortamos el radio para que se note el "halo" pastel */
+    background: radial-gradient(circle at center, rgba(20, 184, 166, 0.18) 0%, rgba(20, 184, 166, 0.05) 40%, rgba(255, 255, 255, 1) 80%);
+    padding: 80px 0;
+  }
+
+  .section-header {
+    margin-bottom: 3.5rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2.2rem; 
+  }
+
+  /* Grid ESTRICTO a 2 columnas (2x2) */
+  .experiencia-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Aquí forzamos 2 columnas exactas siempre en PC */
+    gap: 30px;
+  }
+
+  .experiencia-card {
+    background: var(--bg-white); 
+    padding: 35px 30px; 
+    border-radius: var(--radius-lg);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06); /* Sombra ligeramente más marcada */
+    border-top: 4px solid var(--primary); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .experiencia-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 15px 35px rgba(20, 184, 166, 0.15);
+  }
+
+  .experiencia-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 1.5rem;
+    color: var(--secondary); 
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 10px;
+  }
+
+  .experiencia-card ul {
+    list-style: none;
+  }
+
+  .experiencia-card li {
+    margin-bottom: 1.2rem;
+    padding-left: 28px;
+    position: relative;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .experiencia-card li:last-child {
+    margin-bottom: 0;
+  }
+
+  .experiencia-card li::before {
+    content: "➔";
+    color: var(--primary);
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  /* Ajuste para móviles: Baja a 1 sola columna */
+  @media (max-width: 968px) {
+    .experiencia-grid {
+      grid-template-columns: 1fr; /* 1 columna en tablets y celulares */
+    }
+    .experiencia-card {
+      padding: 25px 20px;
+    }
+  }
+</style>

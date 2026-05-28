@@ -1,0 +1,135 @@
+---
+---
+<section id="servicios" class="section section-light">
+  <div class="container">
+    
+    <div class="text-center section-header">
+      <h2>Servicios y Tratamientos</h2>
+    </div>
+
+    <div class="servicios-grid">
+      
+      <a href="/blog/consulta-medica-ortopedica/" class="servicio-card">
+        <img src="/assets/images/icono-consulta.svg" alt="Icono Consulta Médica" class="servicio-icon" />
+        <h3>Consulta Médica</h3>
+        <p>Diagnóstico y tratamiento personalizado para esguinces, dolor lumbar, lesiones de tendones y afecciones articulares.</p>
+      </a>
+
+      <a href="/blog/atencion-integral-fracturas/" class="servicio-card">
+        <img src="/assets/images/icono-fractura.svg" alt="Icono Atención de Fracturas" class="servicio-icon" />
+        <h3>Atención de Fracturas</h3>
+        <p>Manejo integral y de vanguardia, desde el diagnóstico preciso hasta la recuperación total de fracturas óseas.</p>
+      </a>
+
+      <a href="/blog/cirugia-reemplazo-cadera/" class="servicio-card">
+        <img src="/assets/images/icono-cadera.svg" alt="Icono Cirugía de Cadera" class="servicio-icon" />
+        <h3>Cirugía de Cadera</h3>
+        <p>Reemplazo articular con estándares internacionales. Solución efectiva cuando el dolor limita sus actividades.</p>
+      </a>
+
+      <a href="/blog/cirugia-reemplazo-rodilla/" class="servicio-card">
+        <img src="/assets/images/icono-rodilla.svg" alt="Icono Cirugía de Rodilla" class="servicio-icon" />
+        <h3>Cirugía de Rodilla</h3>
+        <p>Sustitución articular con alta tecnología para aliviar el dolor intenso y restaurar por completo su calidad de vida.</p>
+      </a>
+
+    </div>
+    
+    <div class="text-center cta-container">
+        <a href="https://wa.me/529511795334" class="btn-primary btn-large" target="_blank">
+          ¿Listo para recuperar tu movilidad sin dolor?
+        </a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .section-header {
+    margin-bottom: 3rem; 
+  }
+  
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+  
+  /* Grid ESTRICTO a 4 columnas en 1 renglón para PC */
+  .servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px; 
+  }
+
+  .servicio-card {
+    display: block; /* Necesario al cambiar div por a */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    background: var(--bg-white);
+    padding: 25px 15px; 
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border-top: 3px solid transparent;
+  }
+
+  /* Efecto hover interactivo */
+  .servicio-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(20, 184, 166, 0.12);
+    border-top: 3px solid var(--primary);
+  }
+
+  /* Estilos para los SVG (NIVEL MAX) */
+  .servicio-icon {
+    width: 90px; /* Tamaño super aumentado */
+    height: 90px; /* Tamaño super aumentado */
+    margin: 0 auto 1.2rem auto; 
+    display: block;
+  }
+
+  /* Títulos más grandes */
+  .servicio-card h3 {
+    color: var(--secondary);
+    font-size: 1.25rem; /* Letra más grande para los títulos de los servicios */
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+  }
+
+  .servicio-card p {
+    font-size: 0.85rem; 
+    color: var(--text-muted);
+    line-height: 1.4;
+    margin-bottom: 0;
+  }
+
+  /* Estilos especiales para el botón final */
+  .cta-container {
+    margin-top: 40px; 
+  }
+
+  .btn-large {
+    padding: 14px 32px;
+    font-size: 1rem;
+    box-shadow: 0 8px 20px rgba(20, 184, 166, 0.3);
+  }
+
+  .btn-large:hover {
+    box-shadow: 0 12px 25px rgba(20, 184, 166, 0.5);
+  }
+
+  /* =========================================
+     MÓVILES Y TABLETS (Responsividad)
+  ========================================= */
+  @media (max-width: 1024px) {
+    .servicios-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .servicios-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

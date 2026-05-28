@@ -1,0 +1,168 @@
+---
+---
+<section class="hero">
+  <div class="container hero-container">
+    
+    <!-- Lado Izquierdo: Carrusel de Imágenes Estabilizado -->
+    <div class="hero-image-slider">
+      <img src="/assets/images/carrusel1.jpeg" class="slide active" alt="Cirugía ortopédica Dr. Luis Enrique 1" />
+      <img src="/assets/images/carrusel2.jpeg" class="slide" alt="Cirugía ortopédica Dr. Luis Enrique 2" />
+      <img src="/assets/images/carrusel3.jpeg" class="slide" alt="Cirugía ortopédica Dr. Luis Enrique 3" />
+    </div>
+
+    <!-- Lado Derecho: Contenido y Textos -->
+    <div class="hero-content">
+      <h1>Especialista en reemplazo articular de cadera y fracturas</h1>
+      
+      <div class="hero-text">
+        <p>El <strong>Dr. Luis Enrique Guadalupe Rojas</strong> es un médico cirujano especialista en <strong>Ortopedia y Traumatología</strong> egresado de la UNAM, con formación en el Hospital General de Xoco donde realizó una <strong>Alta Especialidad en Cirugía de Cadera, Pelvis y Acetábulo</strong>, además de una rotación de adiestramiento en Cirugía Articular de Cadera y Rodilla en Colombia bajo la supervisión del Dr. Nicolas Restrepo.</p>
+        
+        <p>Consolidando su trayectoria a nivel internacional, cuenta con entrenamiento en <strong>Anterior Approach Hip por Medacta (Chicago, IL)</strong>, siendo actualmente <strong>Refer Center de Medacta International en México</strong> y miembro de la <strong>American Association of Hip and Knee Surgeons</strong>.</p>
+        
+        <p>Le atenderá con gusto en su consultorio ubicado en la torre de consultorios del <strong>Hospital HMG Coyoacán San Ángel Inn</strong> en la CDMX.</p>
+      </div>
+      
+      <!-- Botones Originales -->
+      <div class="hero-buttons">
+        <a href="#servicios" class="btn-primary">Ver Servicios</a>
+        <a href="#consultorio" class="btn-link">Agendar Cita ➔</a>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<style>
+  .hero {
+    background-color: var(--bg-light); 
+    padding: 60px 0 80px;
+  }
+  
+  .hero-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  /* =========================================
+     CARRUSEL ESTABILIZADO (CANDADO DE TAMAÑO)
+  ========================================= */
+  .hero-image-slider {
+    /* En lugar de flex: 1, le damos un ancho estricto para evitar que las fotos lo estiren */
+    width: 100%;
+    max-width: 480px; 
+    position: relative; 
+    aspect-ratio: 4 / 5; /* Mantiene proporción tipo retrato */
+    border-radius: var(--radius-lg);
+    overflow: hidden; 
+    box-shadow: var(--shadow-sm);
+    background-color: #e2e8f0; /* Fondo gris temporal por si la foto tarda en cargar */
+    flex-shrink: 0; /* Evita que el texto lo aplaste */
+  }
+
+  .slide {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto hace el recorte mágico sin deformar */
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+    z-index: 1;
+  }
+
+  .slide.active {
+    opacity: 1;
+    z-index: 2;
+  }
+
+  /* =========================================
+     TEXTOS Y BOTONES
+  ========================================= */
+  .hero-content {
+    flex: 1; 
+  }
+
+  .hero-content h1 {
+    font-size: 2.6rem;
+    color: var(--primary); 
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+  }
+
+  .hero-text p {
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .hero-text strong {
+    color: #000; 
+    font-weight: 700;
+  }
+
+  .hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 2rem;
+  }
+
+  .btn-link {
+    color: var(--primary);
+    font-weight: 700;
+    transition: color 0.3s ease;
+  }
+
+  .btn-link:hover {
+    color: var(--secondary);
+  }
+
+  /* =========================================
+     MÓVILES
+  ========================================= */
+  @media (max-width: 968px) {
+    .hero-container {
+      flex-direction: column; 
+      text-align: center;
+      gap: 40px;
+    }
+    
+    .hero-image-slider {
+      max-width: 100%; /* En móviles dejamos que ocupe todo el ancho disponible */
+      aspect-ratio: 1 / 1; /* Lo hacemos cuadrado para que no quite tanta pantalla */
+    }
+
+    .hero-content h1 {
+      font-size: 2.2rem;
+    }
+    
+    .hero-buttons {
+      justify-content: center;
+    }
+  }
+</style>
+
+<!-- Lógica del Carrusel (Estilo Astro) -->
+<script>
+  // En Astro no necesitamos DOMContentLoaded porque el script ya es un módulo diferido
+  const startSlider = () => {
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    // Solo activamos el carrusel si realmente hay más de 1 imagen
+    if (slides.length > 1) {
+      setInterval(() => {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+      }, 3000); 
+    }
+  };
+
+  // Ejecutamos la función inmediatamente
+  startSlider();
+</script>

@@ -1,0 +1,24 @@
+---
+// src/pages/blog/[slug].astro
+import { getCollection, render } from 'astro:content';
+import BlogPost from '../../layouts/BlogPost.astro';
+
+export async function getStaticPaths() {
+    const posts = await getCollection('blog');
+    return posts.map((post) => ({
+        // El slug ahora se basa directamente en el ID del archivo
+        params: { slug: post.id.replace(/\.[^/.]+$/, "") },
+        props: { post },
+    }));
+}
+
+const { post } = Astro.props;
+
+// Usamos el renderizador nativo de Astro que lee el contenido 
+// del archivo original, sin importaciones dinámicas complicadas.
+const { Content } = await render(post);
+---
+
+<BlogPost {...post.data}>
+    <Content />
+</BlogPost>
