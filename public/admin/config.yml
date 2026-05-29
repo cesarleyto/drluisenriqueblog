@@ -1,17 +1,28 @@
 backend:
-  name: git-gateway
-  branch: main
+  name: github
+  # Recuerda cambiar esto por tu usuario y el nombre de tu repositorio
+  repo: cesarleyto/drluisenriqueblog 
+  branch: main 
+
+media_folder: "public/assets/blog" 
+public_folder: "/assets/blog"
 
 collections:
   - name: "blog"
-    label: "Blog"
+    label: "Artículos del Blog"
     folder: "src/content/blog"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{slug}}"
     fields:
       - {label: "Título", name: "title", widget: "string"}
-      - {label: "Descripción", name: "description", widget: "text"}
-      - {label: "Fecha", name: "pubDate", widget: "datetime"}
-      - {label: "Imagen", name: "heroImage", widget: "image"}
-      - {label: "Categoría", name: "category", widget: "string"}
-      - {label: "Cuerpo", name: "body", widget: "markdown"}
+      - {label: "Descripción (SEO)", name: "description", widget: "string"}
+      - {label: "Fecha de publicación", name: "pubDate", widget: "datetime"}
+      - {label: "Imagen destacada", name: "heroImage", widget: "image", required: false}
+      
+      # Selector de categorías exacto
+      - label: "Categoría"
+        name: "category"
+        widget: "select"
+        options: ["Padecimientos", "Experiencia Académica", "Casos de Éxito"]
+
+      - {label: "Cuerpo del artículo", name: "body", widget: "markdown"}
