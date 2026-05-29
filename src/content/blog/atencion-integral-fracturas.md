@@ -2,7 +2,7 @@
 title: "Atención de Fracturas: Manejo integral y de vanguardia para una recuperación total"
 description: "Una fractura requiere mucho más que un yeso. Conoce nuestro protocolo de manejo experto para que el hueso sane correctamente y sin secuelas."
 pubDate: 2025-05-08
-heroImage: "../../assets/images/posts/post12.jpg"
+heroImage: "/assets/images/posts/post12.jpg"
 category: "Padecimientos"
 ---
 
