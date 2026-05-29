@@ -2,7 +2,7 @@
 title: "¿Empiezas a cojear al caminar? Lo que tu cuerpo te está diciendo sobre tus articulaciones"
 description: "Cojear no es un síntoma normal del envejecimiento. Entiende la biomecánica de tu marcha y cómo recuperar tu movilidad."
 pubDate: 2026-01-01
-heroImage: "../../assets/images/posts/post3.jpg"
+heroImage: "/assets/images/posts/post3.jpg"
 category: "Padecimientos"
 ---
 

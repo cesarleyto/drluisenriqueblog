@@ -2,7 +2,7 @@
 title: "¿Qué pasa después de la cirugía? Guía para retomar tu vida con una articulación nueva"
 description: "El miedo al quirófano a menudo viene del miedo a lo desconocido. Te explico paso a paso cómo es la recuperación tras un reemplazo articular."
 pubDate: 2026-03-15
-heroImage: "../../assets/images/posts/post8.jpg"
+heroImage: "/assets/images/posts/post8.jpg"
 category: "Padecimientos"
 ---
 

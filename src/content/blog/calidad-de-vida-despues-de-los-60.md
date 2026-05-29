@@ -2,7 +2,7 @@
 title: "\"¿Ya estoy viejo para esto?\": La verdad sobre la calidad de vida después de los 60 años"
 description: "Desmitificamos la idea de que envejecer significa resignarse al dolor. Descubre por qué tus mejores años de movilidad aún pueden estar por venir."
 pubDate: 2026-01-15
-heroImage: "../../assets/images/posts/post4.jpg"
+heroImage: "/assets/images/posts/post4.jpg"
 category: "Padecimientos"
 ---
 

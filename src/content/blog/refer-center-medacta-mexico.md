@@ -2,7 +2,7 @@
 title: "¿Qué significa ser un 'Refer Center' de Medacta? Tecnología suiza para tu recuperación"
 description: "Conoce los estándares internacionales y la tecnología de vanguardia que respaldan tu cirugía de cadera o rodilla."
 pubDate: 2026-03-01
-heroImage: "../../assets/images/posts/post7.jpg"
+heroImage: "/assets/images/posts/post7.jpg"
 category: "Padecimientos"
 ---
 

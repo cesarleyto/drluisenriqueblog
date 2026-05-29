@@ -2,7 +2,7 @@
 title: "¿Es un simple dolor o desgaste de cadera? 5 señales que no debes ignorar"
 description: "Aprende a diferenciar entre una molestia muscular pasajera y los primeros síntomas de desgaste articular en la cadera."
 pubDate: 2025-12-01
-heroImage: "../../assets/images/posts/post1.jpg"
+heroImage: "/assets/images/posts/post1.jpg"
 category: "Padecimientos"
 ---
 

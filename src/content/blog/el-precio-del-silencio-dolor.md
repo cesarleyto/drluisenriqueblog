@@ -2,7 +2,7 @@
 title: "El precio del silencio: Por qué esperar a que el dolor sea insoportable es tu peor error"
 description: "Soportar el dolor articular en silencio no te hace más fuerte; descubre cómo afecta tu calidad de vida y la salud del resto de tu cuerpo."
 pubDate: 2025-12-15
-heroImage: "../../assets/images/posts/post2.jpg"
+heroImage: "/assets/images/posts/post2.jpg"
 category: "Padecimientos"
 ---
 

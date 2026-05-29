@@ -2,7 +2,7 @@
 title: "Cirugía de Rodilla: Alta tecnología para dejar atrás el dolor intenso"
 description: "Sustitución articular moderna y precisa. La solución definitiva para restaurar tu calidad de vida, enderezar tu pierna y eliminar el desgaste."
 pubDate: 2025-05-22
-heroImage: "../../assets/images/posts/post14.jpg"
+heroImage: "/assets/images/posts/post14.jpg"
 category: "Padecimientos"
 ---
 

@@ -2,7 +2,7 @@
 title: "El costo de no operarse: Los años perdidos que nadie te va a devolver"
 description: "Posponer tu cirugía articular esperando 'el momento ideal' tiene consecuencias irreversibles en tu salud física y mental."
 pubDate: 2026-04-15
-heroImage: "../../assets/images/posts/post10.jpg"
+heroImage: "/assets/images/posts/post10.jpg"
 category: "Padecimientos"
 ---
 

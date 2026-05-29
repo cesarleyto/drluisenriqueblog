@@ -2,7 +2,7 @@
 title: "¿Cuánto cuesta una cirugía de cadera? Lo que estás comprando es tu libertad para los próximos 25 años"
 description: "Cambia la perspectiva: descubre por qué recuperar tu movilidad y eliminar el dolor es la mejor inversión que puedes hacer en tu vida."
 pubDate: 2026-04-01
-heroImage: "../../assets/images/posts/post9.jpg"
+heroImage: "/assets/images/posts/post9.jpg"
 category: "Padecimientos"
 ---
 

@@ -2,7 +2,7 @@
 title: "Técnica Bikini: La cirugía de cadera que te permite volver a caminar el mismo día"
 description: "Conoce el Abordaje Anterior de cadera, un procedimiento innovador y estético que acelera tu recuperación sin cortar músculos."
 pubDate: 2026-02-01
-heroImage: "../../assets/images/posts/post5.jpg"
+heroImage: "/assets/images/posts/post5.jpg"
 category: "Padecimientos"
 ---
 

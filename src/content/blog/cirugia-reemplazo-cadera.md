@@ -2,7 +2,7 @@
 title: "Cirugía de Cadera: Soluciones de vanguardia para recuperar tu independencia"
 description: "Reemplazo articular con estándares internacionales. Descubre cuándo es el momento indicado y por qué somos tu mejor opción para volver a caminar."
 pubDate: 2025-05-15
-heroImage: "../../assets/images/posts/post13.jpg"
+heroImage: "/assets/images/posts/post13.jpg"
 category: "Padecimientos"
 ---
 

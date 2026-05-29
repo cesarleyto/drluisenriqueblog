@@ -2,7 +2,7 @@
 title: "¿Por qué un cirujano de cadera general no es suficiente para un caso complejo de pelvis?"
 description: "Descubre la importancia de acudir con un traumatólogo con Alta Especialidad en Pelvis y Acetábulo para garantizar el éxito de tu tratamiento."
 pubDate: 2026-02-15
-heroImage: "../../assets/images/posts/post6.jpg"
+heroImage: "/assets/images/posts/post6.jpg"
 category: "Padecimientos"
 ---
 

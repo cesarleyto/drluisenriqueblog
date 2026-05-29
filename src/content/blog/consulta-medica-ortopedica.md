@@ -2,7 +2,7 @@
 title: "Consulta Médica Especializada: El primer paso para recuperar tu movilidad"
 description: "Un dolor lumbar crónico o un esguince mal curado pueden limitar tu vida. Descubre por qué un diagnóstico ortopédico preciso a tiempo lo cambia todo."
 pubDate: 2025-05-01
-heroImage: "../../assets/images/posts/post11.jpg"
+heroImage: "/assets/images/posts/post11.jpg"
 category: "Padecimientos"
 ---
 
