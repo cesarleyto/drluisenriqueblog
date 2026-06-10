@@ -9,44 +9,44 @@
 
     <div class="experiencia-grid">
       
-      <!-- Tarjeta 1: Formación -->
+      <!-- Tarjeta 1: Certificaciones Médicas (Consolidado) -->
       <div class="experiencia-card">
-        <h3>🎓 Formación Académica</h3>
-        <ul>
-          <li><strong>Especialista en Ortopedia y Traumatología</strong> egresado de la Universidad Nacional Autónoma de México (UNAM).</li>
-          <li><strong>Alta Especialidad</strong> en Cirugía Articular de Cadera, y Cirugía de Pelvis y Acetábulo (UNAM).</li>
-          <li><strong>Training surgery en Anterior Approach Hip</strong> por Medacta Orthopaedic Research and Education (Chicago, IL), enfocado en técnicas mínimamente invasivas.</li>
-        </ul>
-      </div>
-
-      <!-- Tarjeta 2: Sociedades -->
-      <div class="experiencia-card">
-        <h3>🏥 Certificaciones y Sociedades</h3>
+        <h3>🏥 Certificaciones Médicas</h3>
         <ul>
           <li>Certificación por el <strong>Consejo Mexicano de Ortopedia</strong>.</li>
-          <li>Miembro de la <strong>American Association of Hip and Knee Surgeons (AAHKS)</strong> y AO Trauma Latinoamerica.</li>
-          <li>Miembro Titular del Colegio Mexicano de Ortopedia y Traumatología, y la Sociedad Mexicana de Cirugía de Cadera A.C.</li>
-          <li>Miembro de la Sociedad Internacional de Pelvis y Acetábulo.</li>
+          <li>Miembro Titular del <strong>Colegio Mexicano de Ortopedia y Traumatología</strong>.</li>
+          <li>Miembro activo de la <strong>Sociedad Mexicana de Cirugía de Cadera A.C.</strong></li>
+          <li>Miembro de la Sociedad Internacional de Pelvis y Acetábulo y AO Trauma Latinoamérica.</li>
         </ul>
       </div>
 
-      <!-- Tarjeta 3: Profesional -->
-      <div class="experiencia-card">
-        <h3>💼 Práctica Profesional</h3>
-        <ul>
-          <li><strong>Refer Center de Medacta International en México:</strong> Parte de la red global de centros de referencia en artroplastia.</li>
-          <li>Práctica privada, urgencias y atención a seguros médicos en <strong>Hospital HMG Coyoacán San Ángel Inn</strong>.</li>
-          <li>Participación en programas internacionales de educación, innovación y estandarización quirúrgica.</li>
-        </ul>
-      </div>
-
-      <!-- Tarjeta 4: Academia y Premios -->
+      <!-- Tarjeta 2: Academia y Premios (Sin cambios, muy buena) -->
       <div class="experiencia-card">
         <h3>🏆 Academia y Reconocimientos</h3>
         <ul>
           <li><strong>Profesor Internacional</strong> del Simposium en Cirugía Biológica y congresos de ortopedia avanzada.</li>
           <li>Socio fundador del Directorio Médico Nacional y autor de <strong>publicaciones médicas premiadas</strong>.</li>
-          <li>Reconocimiento por la contribución en la lucha por la salud contra la COVID-19 por la <strong>UNAM</strong>.</li>
+          <li>Reconocimiento especial por la contribución en la lucha por la salud contra la COVID-19 por la <strong>UNAM</strong>.</li>
+        </ul>
+      </div>
+
+      <!-- Tarjeta 3: Perfil Profesional (El texto exacto del Dr.) -->
+      <div class="experiencia-card">
+        <h3>👨‍⚕️ Perfil y Consultorios</h3>
+        <p>El <strong>Dr. Luis Enrique Guadalupe Rojas</strong> es un médico cirujano especialista en Ortopedia y Traumatología egresado de la UNAM, con formación en el Hospital General de Xoco donde realizó una Alta Especialidad en Cirugía de Cadera, Pelvis y Acetábulo, además de una rotación de adiestramiento en Cirugía Articular de Cadera y Rodilla en Colombia bajo la supervisión del Dr. Nicolas Restrepo.</p>
+        
+        <p>Consolidando su trayectoria a nivel internacional, cuenta con entrenamiento en Anterior Approach Hip por Medacta (Chicago, IL), siendo actualmente <strong>Refer Center de Medacta International en México</strong> y miembro de la American Association of Hip and Knee Surgeons.</p>
+        
+        <p>Le atenderá con gusto en su consultorio ubicado en la torre de consultorios del <strong>Hospital San Ángel Inn HMG</strong> y <strong>Hospital Los Ángeles Universidad</strong> en la CDMX.</p>
+      </div>
+
+      <!-- Tarjeta 4: Práctica y Vanguardia (Lo que no cubría el texto) -->
+      <div class="experiencia-card">
+        <h3>💼 Práctica y Enfoque Quirúrgico</h3>
+        <ul>
+          <li>Práctica privada integral, atención de <strong>urgencias ortopédicas</strong> y aceptación de seguros de gastos médicos.</li>
+          <li>Atención hiperespecializada en casos primarios, revisiones complejas y <strong>cirugía reconstructiva</strong>.</li>
+          <li>Participación constante en programas internacionales de educación, innovación y estandarización quirúrgica.</li>
         </ul>
       </div>
 
@@ -55,9 +55,8 @@
 </section>
 
 <style>
-  /* El Fondo Degradado Radial Turquesa Pastel (Más Intenso y Visible) */
+  /* El Fondo Degradado Radial Turquesa Pastel */
   .section-gradient {
-    /* Subimos la opacidad a un 18% en el centro y acortamos el radio para que se note el "halo" pastel */
     background: radial-gradient(circle at center, rgba(20, 184, 166, 0.18) 0%, rgba(20, 184, 166, 0.05) 40%, rgba(255, 255, 255, 1) 80%);
     padding: 80px 0;
   }
@@ -73,7 +72,7 @@
   /* Grid ESTRICTO a 2 columnas (2x2) */
   .experiencia-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Aquí forzamos 2 columnas exactas siempre en PC */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 30px;
   }
 
@@ -81,7 +80,7 @@
     background: var(--bg-white); 
     padding: 35px 30px; 
     border-radius: var(--radius-lg);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06); /* Sombra ligeramente más marcada */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06); 
     border-top: 4px solid var(--primary); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
@@ -99,6 +98,7 @@
     padding-bottom: 10px;
   }
 
+  /* Estilos para listas */
   .experiencia-card ul {
     list-style: none;
   }
@@ -126,10 +126,26 @@
     font-weight: 700;
   }
 
+  /* NUEVO: Estilos para el texto en párrafo del Tercer Bloque */
+  .experiencia-card p {
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .experiencia-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .experiencia-card p strong {
+    color: #000;
+  }
+
   /* Ajuste para móviles: Baja a 1 sola columna */
   @media (max-width: 968px) {
     .experiencia-grid {
-      grid-template-columns: 1fr; /* 1 columna en tablets y celulares */
+      grid-template-columns: 1fr; 
     }
     .experiencia-card {
       padding: 25px 20px;
