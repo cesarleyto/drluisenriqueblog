@@ -14,9 +14,14 @@ const fullTitle = `${title} | ${SITE_TITLE}`;
 ---
 
 <html lang="es">
-	<head>
-		<BaseHead title={fullTitle} description={description} />
-	</head>
+<head>
+        <BaseHead title={fullTitle} description={description} />
+        
+        <meta property="og:title" content={fullTitle} />
+        <meta property="og:description" content={description} />
+        {heroImage && <meta property="og:image" content={new URL(heroImage, Astro.site)} />}
+        <meta property="og:type" content="article" />
+    </head>
 
 	<body>
 		<Header />
