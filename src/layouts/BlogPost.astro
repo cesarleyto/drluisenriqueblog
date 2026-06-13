@@ -14,134 +14,126 @@ const fullTitle = `${title} | ${SITE_TITLE}`;
 ---
 
 <html lang="es">
-<head>
-        <BaseHead title={fullTitle} description={description} />
-        
-        <meta property="og:title" content={fullTitle} />
-        <meta property="og:description" content={description} />
-        {heroImage && <meta property="og:image" content={new URL(heroImage, Astro.site)} />}
-        <meta property="og:type" content="article" />
+    <head>
+        <BaseHead title={fullTitle} description={description} image={heroImage} />
     </head>
 
-	<body>
-		<Header />
-		<main>
-			<article>
-				<!-- Usamos img estándar para evitar conflictos con rutas de texto -->
-				{heroImage && (
-					<div class="hero-container">
-						<img src={heroImage} alt={title} class="hero-img" />
-					</div>
-				)}
-				
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{updatedDate && <div class="last-updated-on">Actualizado el <FormattedDate date={updatedDate} /></div>}
-						</div>
-						<h1>{title}</h1>
-						<hr />
-					</div>
-					
-					<slot />
+    <body>
+        <Header />
+        <main>
+            <article>
+                {heroImage && (
+                    <div class="hero-container">
+                        <img src={heroImage} alt={title} class="hero-img" />
+                    </div>
+                )}
+                
+                <div class="prose">
+                    <div class="title">
+                        <div class="date">
+                            <FormattedDate date={pubDate} />
+                            {updatedDate && <div class="last-updated-on">Actualizado el <FormattedDate date={updatedDate} /></div>}
+                        </div>
+                        <h1>{title}</h1>
+                        <hr />
+                    </div>
+                    
+                    <slot />
 
-					<!-- Botón centrado -->
-					<div class="cta-section">
-						<a href="https://wa.me/529511795334" class="btn-primary btn-cta" target="_blank">
-							¡Agenda una cita hoy mismo!
-						</a>
-					</div>
+                    <div class="cta-section">
+                        <a href="https://wa.me/529511795334" class="btn-primary btn-cta" target="_blank">
+                            ¡Agenda una cita hoy mismo!
+                        </a>
+                    </div>
 
-					<!-- Módulo del Autor -->
-					<div class="author-module">
-						<div class="author-avatar">
-							<img src="/assets/images/dr-profile.jpg" alt="Dr. Luis Enrique" />
-						</div>
-						<div class="author-bio">
-							<span class="label-upper">ESCRITO Y APROBADO POR EL</span>
-							<h3>Dr. Luis Enrique Guadalupe Rojas</h3>
-							<p>Médico especialista en Ortopedia y Traumatología, experto en reemplazo articular de cadera y rodilla. Mi compromiso es devolverte la movilidad y calidad de vida que mereces.</p>
-							<p><strong>Cédula profesional: 12426918 - 8976672</strong></p>
-						</div>
-					</div>
-				</div>
-			</article>
-		</main>
-		<Footer />
-	</body>
+                    <div class="author-module">
+                        <div class="author-avatar">
+                            <img src="/assets/images/dr-profile.jpg" alt="Dr. Luis Enrique" />
+                        </div>
+                        <div class="author-bio">
+                            <span class="label-upper">ESCRITO Y APROBADO POR EL</span>
+                            <h3>Dr. Luis Enrique Guadalupe Rojas</h3>
+                            <p>Médico especialista en Ortopedia y Traumatología, experto en reemplazo articular de cadera y rodilla. Mi compromiso es devolverte la movilidad y calidad de vida que mereces.</p>
+                            <p><strong>Cédula profesional: 12426918 - 8976672</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <Footer />
+    </body>
 </html>
 
 <style>
-	body { background: radial-gradient(circle at center, rgba(20, 184, 166, 0.18) 0%, rgba(20, 184, 166, 0.05) 40%, rgba(255, 255, 255, 1) 80%); }
-	
-	.hero-container {
-		width: 720px;
-		max-width: calc(100% - 2em);
-		margin: 40px auto 2rem auto;
-		overflow: hidden;
-		border-radius: var(--radius-lg);
-		display: flex;
-		justify-content: center;
-	}
-	.hero-img {
-		width: 100%;
-		height: auto;
-		display: block;
-		transition: transform 0.6s ease;
-	}
-	.hero-container:hover .hero-img { transform: scale(1.05); }
-	
-	.prose { width: 720px; max-width: calc(100% - 2em); margin: auto; padding: 2em 1em; }
-	
-	.title { text-align: center; margin-bottom: 2rem; }
-	.title h1 { font-size: 3rem; line-height: 1.1; margin-bottom: 0.5em; color: var(--primary); }
-	.date { color: var(--text-muted); margin-bottom: 0.5rem; }
+    body { background: radial-gradient(circle at center, rgba(20, 184, 166, 0.18) 0%, rgba(20, 184, 166, 0.05) 40%, rgba(255, 255, 255, 1) 80%); }
+    
+    .hero-container {
+        width: 720px;
+        max-width: calc(100% - 2em);
+        margin: 40px auto 2rem auto;
+        overflow: hidden;
+        border-radius: var(--radius-lg);
+        display: flex;
+        justify-content: center;
+    }
+    .hero-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.6s ease;
+    }
+    .hero-container:hover .hero-img { transform: scale(1.05); }
+    
+    .prose { width: 720px; max-width: calc(100% - 2em); margin: auto; padding: 2em 1em; }
+    
+    .title { text-align: center; margin-bottom: 2rem; }
+    .title h1 { font-size: 3rem; line-height: 1.1; margin-bottom: 0.5em; color: var(--primary); }
+    .date { color: var(--text-muted); margin-bottom: 0.5rem; }
 
-	.cta-section { 
-		display: flex; 
-		justify-content: center; 
-		margin: 40px 0; 
-	}
-	.btn-cta {
-		padding: 18px 45px;
-		font-size: 1.2rem;
-		box-shadow: 0 0 20px rgba(20, 184, 166, 0.5);
-	}
-	.btn-cta:hover { box-shadow: 0 0 30px rgba(20, 184, 166, 0.8); }
+    .cta-section { 
+        display: flex; 
+        justify-content: center; 
+        margin: 40px 0; 
+    }
+    .btn-cta {
+        padding: 18px 45px;
+        font-size: 1.2rem;
+        box-shadow: 0 0 20px rgba(20, 184, 166, 0.5);
+    }
+    .btn-cta:hover { box-shadow: 0 0 30px rgba(20, 184, 166, 0.8); }
 
-	.author-module {
-		display: flex;
-		align-items: center;
-		gap: 35px;
-		background: white;
-		padding: 40px;
-		border-radius: var(--radius-lg);
-		box-shadow: var(--shadow-sm);
-		margin-top: 50px;
-	}
-	.author-avatar img {
-		width: 180px;
-		height: 180px;
-		border-radius: 50%;
-		object-fit: cover;
-		border: 4px solid var(--primary);
-	}
-	.label-upper { 
-		font-size: 0.70rem; 
-		color: var(--primary); 
-		font-weight: 800; 
-		display: block;
-		margin-bottom: 4px;
-	}
-	.author-bio h3 { 
-		font-size: 2rem;
-		color: var(--primary); 
-		margin: 0 0 10px 0; 
-	}
-	.author-bio p { font-size: 1rem; margin-bottom: 8px; }
+    .author-module {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        background: white;
+        padding: 40px;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-sm);
+        margin-top: 50px;
+    }
+    .author-avatar img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid var(--primary);
+    }
+    .label-upper { 
+        font-size: 0.70rem; 
+        color: var(--primary); 
+        font-weight: 800; 
+        display: block;
+        margin-bottom: 4px;
+    }
+    .author-bio h3 { 
+        font-size: 2rem;
+        color: var(--primary); 
+        margin: 0 0 10px 0; 
+    }
+    .author-bio p { font-size: 1rem; margin-bottom: 8px; }
 
-	@media (max-width: 600px) {
-		.author-module { flex-direction: column; text-align: center; }
-	}
+    @media (max-width: 600px) {
+        .author-module { flex-direction: column; text-align: center; }
+    }
 </style>
